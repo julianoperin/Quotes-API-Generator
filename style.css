@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: pink;
+  text-align: center;
+  min-height: 100vh;
+  padding: 100px;
+}
+
+.container {
+  background: #fff;
+  width: 80vw;
+  padding: 40px;
+  min-height: 35vh;
+  border: 3px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.quote-text {
+  min-height: 20vh;
+}
+
+.container h1 {
+  font-family: "Comic Neue", cursive;
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.container p {
+  text-transform: capitalize;
+  color: black;
+  text-align: right;
+  font-style: italic;
+  font-size: 30px;
+  opacity: 0.4;
+}
+
+#btn {
+  margin-top: 30px;
+  font-size: 25px;
+  padding: 10px 20px;
+  background: pink;
+  color: black;
+  border: solid 3px black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+#btn:hover {
+  background: black;
+  color: pink;
+  border: solid 3px pink;
+}
+#btn:focus {
+  outline: none;
+}
+
+.fade {
+  animation: opening 2s ease-in-out forwards;
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
